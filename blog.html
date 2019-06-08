@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/blog.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<!--blog内容-->
+		<div id="blog">
+			<div class="titrow">
+				<div class="container text-center">
+					<h1>BLOG</h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li class="active">New</li>
+					</ol>
+				</div>
+			</div>
+			<div class="container diycontent">
+				<div class="col-sm-3 col-xs-0">
+					<div class="sidebar">
+						<h4>BLOG BY CATEGORIES</h4>
+						<ul>
+							<li>
+								<a href="#">ADAPTERS</a>
+							</li>
+							<li>
+								<a href="#">CLAMPS</a>
+								<ul>
+									<li>
+										<a href="#">FABRICATION</a>
+									</li>
+									<li>
+										<a href="#">CAPS</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">CUSTOM</a>
+							</li>
+							<li>
+								<a href="#">FERRULES</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-9 col-xs-12">
+					<div class="row blog-body">
+						<div class="col-sm-3 col-xs-12">
+							<img src="img/product4.jpg" />
+						</div>
+						<div class="col-sm-9 col-xs-12">
+							<h4 class="blog-heading"><a href="singleblog.html">China’s foreign trade may fluctuate in Q1China’s foreign trade may fluctuate in Q1</a></h4>
+							<p class="blog-meta">
+								<span class="fa fa-clock-o fa-fw"></span>2017.4.10
+								<span class="fa fa-user fa-fw"></span>admin
+							</p>
+							<p>
+								Workers work 40 meters underground in the Lanzhou section of the Yellow River, capital of northwest China’s Gansu province, May 9, 2016. The construction of the right tunnel of Lanzhou subway line one was completed on May 9. It’s the first subway line to run under the Yellow River. [Photo/Xinhua] h ...
+							</p>
+							<a href="singleblog.html" class="pull-right more">Read More...</a>
+						</div>
+					</div>
+					<div class="row blog-body">
+						<div class="col-sm-3 col-xs-12">
+							<img src="img/product3.jpg" />
+						</div>
+						<div class="col-sm-9 col-xs-12">
+							<h4 class="blog-heading">China may miss 2013 foreign trade growth target</h4>
+							<p class="blog-meta">
+								<span class="fa fa-clock-o fa-fw"></span>2017.4.10
+								<span class="fa fa-user fa-fw"></span>admin
+							</p>
+							<p>
+								BEIJING, Dec. 27 (Xinhua) — China’s foreign trade is likely to grow by more than 7 percent from the previous year to reach 4.14 trillion U.S. dollars in 2013, slightly lower than the official target of 8 percent. Minister of Commerce Gao Hucheng said the country will continue eff ...
+							</p>
+							<a href="singleblog.html" class="pull-right more">Read More...</a>
+						</div>
+					</div>
+					<div class="row blog-body">
+						<div class="col-sm-3 col-xs-12">
+							<img src="img/product2.jpg" />
+						</div>
+						<div class="col-sm-9 col-xs-12">
+							<h4 class="blog-heading">Goldman settles with SEC for $550 million</h4>
+							<p class="blog-meta">
+								<span class="fa fa-clock-o fa-fw"></span>2017.4.10
+								<span class="fa fa-user fa-fw"></span>admin
+							</p>
+							<p>
+								NEW YORK (CNNMoney.com) — Automakers GM and Chrysler were pressured to close hundreds of dealerships quickly by the Treasury department without regard for the job losses that would result, according to a government watchdog report out Sunday. Treasury was charged with helping the car compa ...
+							</p>
+							<a href="singleblog.html" class="pull-right more">Read More...</a>
+						</div>
+					</div>
+					<div class="text-center">
+						<ul class="pagination">
+							<li>
+								<a href="#">&laquo;</a>
+							</li>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#">&raquo;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--blog内容end-->
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+
+				//sidebar加箭头
+				$('.sidebar ul li').each(function() {
+					$('ul', this).length >= 1 ? $(this).append("<a class='fa fa-angle-down haveli'></a>") : '';
+				});
+				$('.sidebar ul li').on('click','.haveli',function(){
+					$(this).siblings('ul').slideToggle('fast');
+					if($(this).hasClass('fa-angle-down')){
+						$(this).removeClass("fa-angle-down").addClass("fa-angle-up");
+					}else{
+						$(this).removeClass("fa-angle-up").addClass("fa-angle-down");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

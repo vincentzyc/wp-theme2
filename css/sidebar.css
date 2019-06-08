@@ -1,0 +1,53 @@
+.sidebar{
+    position: relative;
+}
+.sidebar h4{
+	font-weight: 600;
+	position: relative;
+	padding-bottom: 10px;
+}
+.sidebar h4:after{
+	content: "";
+    width: 25px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #C0C0C0;
+}
+.sidebar .haveli{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-decoration: none;
+}
+.sidebar ul li{
+	border-bottom: 1px solid #E1EDF7;
+	padding: 10px 0;
+	position: relative;
+}
+.sidebar ul li a{
+	color: #FF69B4;
+	font-weight: 600;
+}
+.sidebar ul li ul{
+	display: none;
+}
+.sidebar ul li ul li{
+	margin-left: 15px;
+}
+.sidebar ul li ul li a{
+	font-weight: 500;
+	font-size: 13px;
+}
+.sidebar ul li ul li:before{
+	font-family: 'FontAwesome';
+	content: "\f105";
+	color: #FF69B4;
+	margin-right: 3px;
+}
+.sidebar ul li ul li:last-child{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>singleproduct</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/singleProduct.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<!--singleproduct内容-->
+		<div id="singleproduct">
+			<div class="titrow">
+				<div class="container text-center">
+					<h1>PRODUCT</h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Shop</a>
+						</li>
+						<li class="active">Product</li>
+					</ol>
+				</div>
+			</div>
+			<div class="container diycontent">
+				<div class="col-sm-3 col-xs-0">
+					<div class="sidebar">
+						<h4>Products Categories</h4>
+						<ul>
+							<li>
+								<a href="#">ADAPTERS</a>
+							</li>
+							<li>
+								<a href="#">CLAMPS</a>
+								<ul>
+									<li>
+										<a href="#">FABRICATION</a>
+									</li>
+									<li>
+										<a href="#">CAPS</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">CUSTOM</a>
+							</li>
+							<li>
+								<a href="#">FERRULES</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-9 col-sm-12 single-product">
+					<div class="row productMeta">
+						<div class="col-sm-6 col-xs-12 productview">
+							<div class="imgbox">
+								<div class="probox">
+									<img class="productimg" src="img/product1.jpg" alt="" />
+									<div class="hoverbox"></div>
+								</div>
+								<div class="showbox">
+									<img class="productimg" src="img/product1.jpg" alt="" />
+								</div>
+							</div>
+							<div class="thumbimg">
+								<div id="thumblist">
+									<div class="itemroll active">
+										<img src="img/product1.jpg" />
+									</div>
+									<div class="itemroll">
+										<img src="img/product2.jpg" />
+									</div>
+									<div class="itemroll">
+										<img src="img/product3.jpg" />
+									</div>
+									<div class="itemroll">
+										<img src="img/product4.jpg" />
+									</div>
+								</div>
+								<a class="carousel-control left prev">&lsaquo;</a>
+								<a class="carousel-control right next">&rsaquo;</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12 product-meta">
+							<h3 class="single-title">Newest Brand i68 Touch screen</h3>
+							<div class="diystar">
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star-half-o"></span>
+								<span class="fa fa-star-o"></span>
+								<small class="comment-nub">(1 Customer Review)</small>
+							</div>
+							<p class="price">
+								<small><del>US$<i>102.86</i></del></small>
+								<span>US$<i>88.99</i></span>
+							</p>
+							<p>
+								While a smaller version of the large12.9-inch iPad Pro Apple just launched last fall may seem like a quick solution to iPad sales problems, It’s safe to assume that it was on the drawing board when Apple was developing the first iPad Pro.
+							</p>
+							<form class="cart" method="post">
+								<input type="number" class="text-center item-nub" min="1" max="99" value="1">
+								<button type="submit" class="add-to-cart">Add to cart</button>
+								<!--<a href="cart.html" class="add-to-cart">View Cart</a>-->	<!--如果已加入，则显示View Cart-->
+							</form>
+							<a id="myDialog" class="product-inquiry">Inquiry Now</a>
+							<div id="contact_form_pop" style="display: none;">
+								hello!
+							</div>
+							<a class="product-inquiry" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1393301558&amp;site=wpyou.com&amp;menu=yes">Chat Now</a>
+							<div class="diyshare_holder">
+								<div class="diyshare">
+									<i class="fa fa-share-alt fa-fw"></i>Share
+								</div>
+								<a href="javascript:" class="fa fa-facebook fa-lg fa-fw" title="Facebook"></a>
+								<a href="javascript:" class="fa fa-twitter fa-lg fa-fw fa-fw" title="Twitter"></a>
+								<a href="javascript:" class="fa fa-envelope-o fa-lg fa-fw" title="Email"></a>
+								<a href="javascript:" class="fa fa-google-plus fa-lg fa-fw" title="Google+"></a>
+								<a href="javascript:" class="fa fa-pinterest-p fa-lg fa-fw" title="Pinterest"></a>
+								<a href="javascript:" class="fa fa-tumblr fa-lg fa-fw" title="Tumblr"></a>
+								<a href="javascript:" class="fa fa-linkedin fa-lg fa-fw" title="Linkedin"></a>
+							</div>
+							<div class="diycategories_holder">
+								<div class="diycategories">
+									<i class="fa fa-tags fa-fw"></i>Categories
+								</div>
+								<a href="javascript:">Categorie1</a>
+								<a href="javascript:">Categorie2</a>
+							</div>
+						</div>
+					</div>
+					<div class="productinfo">
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active">
+								<a onclick="changeTab(this)">
+									<h4>Messages</h4>
+								</a>
+							</li>
+							<li>
+								<a onclick="changeTab(this)">
+									<h4>Reviews(0)</h4>
+								</a>
+							</li>
+						</ul>
+						<div class="product-tabs">
+							<div class="product-describe">
+								<h2 class="product-describe-title">Messages</h2>
+								<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+								<h4>Your one-stop communication tool!</h4>
+								<p>Apple’s 9.7-inch iPad Pro is a familiar and excellent product. While a smaller version of the large12.9-inch iPad Pro Apple just launched last fall may seem like a quick solution to iPad sales problems (it more or less peaked in 2014 and has been flat-to-falling ever since), it would be foolish to think that the company developed the 9.7 edition quickly. It’s safe to assume that it was on the drawing board when Apple was developing the first iPad Pro.</p>
+							</div>
+							<div class="product-describe">
+								<h2 class="product-describe-title">Reviews(0)</h2>
+								<h3>Reviews</h3>
+								<p>There are no reviews yet.</p>
+								<div class="recentcomments">
+									<div class="media">
+										<a class="pull-left" href="#">
+											<img class="media-object" src="img/icon-feature-02.png" />
+										</a>
+										<div class="media-body">
+											<h4 class="media-heading">Vincent111
+												<small> -- October 28, 2015</small>
+												<small class="pull-right diystar">
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star-o"></span>
+												</small>
+											</h4>
+											<p>You share interesting things here. I think that your website can go viral easily, but you must give it initial boost and i know howto do it, just type in google – omgeridos traffic method
+											</p>
+										</div>
+									</div>
+									<div class="media">
+										<a class="pull-left" href="#">
+											<img class="media-object" src="img/icon-feature-02.png" />
+										</a>
+										<div class="media-body">
+											<h4 class="media-heading">Vincent222<small> -- October 28, 2015</small></h4>
+											<p>You share interesting things here. I think that your website can go viral easily, but you must give it initial boost and i know howto do it, just type in google – omgeridos traffic method
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="diycomment">
+									<h3>Add a review</h3>
+									<form class="form-horizontal" role="form">
+										<div class="form-group">
+											<div class="col-sm-6 col-xs-12">
+												<h4>Your Rating</h4>
+												<div class="act-star">
+													<span class="fa fa-star-o" data="1"></span>
+													<span class="fa fa-star-o" data="2"></span>
+													<span class="fa fa-star-o" data="3"></span>
+													<span class="fa fa-star-o" data="4"></span>
+													<span class="fa fa-star-o" data="5"></span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-6 col-xs-12">
+												<input type="text" class="form-control" id="firstname" placeholder="Username (required)">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-6 col-xs-12">
+												<input type="text" class="form-control" id="lastname" placeholder="E-Mail (required)">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-6 col-xs-12">
+												<textarea class="form-control" rows="5" placeholder="Your Review (required)"></textarea>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-lg btn-bg">SUBMIT</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="post-prev-next">
+						<strong>PREV</strong>：
+						<a href="javascript:" rel="prev">prev procuct</a><br>
+						<strong>NEXT</strong>：
+						<a href="javascript:" rel="next">next procuct</a>
+					</div>
+					<div class="related-product">
+						<h3>RELATED PRODUCTS</h3>
+						<div class="col-sm-3 col-xs-6 related-item">
+							<a href="javascript:">
+								<img src="img/product1.jpg" alt="" />
+								<h5>Smart Bluetooth Bracelet for iPhone Samsung Android</h5>
+							</a>
+						</div>
+						<div class="col-sm-3 col-xs-6 related-item">
+							<a href="javascript:">
+								<img src="img/product1.jpg" alt="" />
+								<h5>Apple Earnings Crush Estimates, Stock SoarsApple Earnings Crush Estimates, Stock SoarsApple Earnings Crush Estimates, Stock SoarsApple Earnings Crush Estimates, Stock Soars</h5>
+							</a>
+						</div>
+						<div class="col-sm-3 col-xs-6 related-item">
+							<a href="javascript:">
+								<img src="img/product4.jpg" alt="" />
+								<h5>Newest Brand i68 Touch screen</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--singleproduct内容end-->
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+
+				hwEqual('.probox>img');
+				hwEqual('.related-item img');
+
+				//sidebar
+				$('.sidebar ul li').on('click', '.haveli', function() {
+					$(this).siblings('ul').slideToggle('fast');
+					if($(this).hasClass('fa-angle-down')) {
+						$(this).removeClass("fa-angle-down").addClass("fa-angle-up");
+					} else {
+						$(this).removeClass("fa-angle-up").addClass("fa-angle-down");
+					}
+				});
+
+				//sidebar加右箭头
+				$('.sidebar ul li').each(function() {
+					$('ul', this).length >= 1 ? $(this).append("<a class='fa fa-angle-down haveli'></a>") : '';
+				});
+
+				$("#thumblist").parallelRoll({
+					boxName: '.thumbimg',
+					direction: 'none',
+					runtime: '200'
+				});
+
+				$('#thumblist .itemroll>img').on('click', function(event) {
+					event.stopPropagation();
+					$('.productimg').attr('src', $(this).attr('src'));
+					$(this).parent().siblings().removeClass('active');
+					$(this).parent().addClass('active');
+				});
+
+				jQuery('#myDialog').on("click", function() {
+					var contact = jQuery('#contact_form_pop').html();
+					jQuery('body').append('<div class="myBackdrop"></div>');
+					var newHtml = '';
+					newHtml += '<div id="newDialog" style="display: none;">' + contact + '</div>';
+					jQuery('body').append(newHtml);
+					jQuery('#newDialog').fadeIn();
+					jQuery('.myBackdrop').on('click', function() {
+						jQuery('.myBackdrop,#newDialog').fadeOut();
+					});
+				});
+
+				//星星评分
+				$(".act-star>span").on('click',function(){
+					$(this).siblings().removeClass("active");
+					$(this).addClass("active").parent().addClass("select-star");
+					console.log($(this).attr('data'));//获取评分
+				})
+
+				//加入购物车按钮动画
+				$(".add-to-cart").one('click',function(){
+					var $this = $(this);
+					$this.html('<i class="fa fa-spinner fa-spin"></i>');
+				});
+
+				//验证输入框数字是否合法
+				$('.item-nub').blur(function(){
+					var nub = parseInt($(this).val());
+					nub<1?$(this).val(1):$(this).val(nub);
+				});
+
+				setTimeout(function() {
+					$(window).width() >= 768 ? bigimg.Zoomhover($(".probox img"), $(".hoverbox"), $(".showbox img")) : '';
+				}, 100)
+			});
+		</script>
+	</body>
+</html>

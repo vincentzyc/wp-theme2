@@ -1,0 +1,230 @@
+header{
+	background: #FFFFFF;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+}
+.pc-header{
+	display:none;
+}
+.col-0{
+	display: none;
+}
+@media (min-width: 769px) {
+	.pc-header{
+		display:block;
+	}
+	.m-header{
+	    display:none;
+	}
+}
+@media (min-width: 992px) {
+	.full-search{
+		display: none;
+	}
+	.col-0{
+		display:block;
+	}
+}
+.header-fixed {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #FFFFFF;
+  animation: fadeTop 1s;
+}
+.hsticky{
+	position: relative;
+	z-index: 1030;
+	background: #FFFFFF;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+}
+.issticky{
+	height: 50px;
+	width: 100%;
+}
+.full-search{
+	margin-top: -10px;
+	padding-left:0 !important;
+}
+.m-logo{
+	margin: 10px;
+}
+.phonenav{
+	line-height: 50px;
+	overflow: hidden;
+}
+.phonenav li{
+	color: #EFEFEF;
+	float: left;
+	width: 25%;
+	background: #FF69B4;
+}
+.phonenav li:last-child{
+	border-right: none;
+}
+.m-collapse {
+	border-bottom: 1px #FF69B4 solid;
+}
+.m-collapse .input-group{
+	padding: 20px;
+}
+#mainlist ul.mymnav li{
+	line-height: 40px;
+	padding: 8px 0 8px 20px;
+	border-top: 1px solid #e6e6e6;
+}
+#mainlist ul.mymnav li a{
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+}
+#mainlist ul.mymnav li a>span{
+	float: right;
+	width: 60px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+#mainlist ul.mymnav li ul.mymnav{
+	display: none;
+}
+.pc-menu ul.navbar-nav>li.active>a{
+	color: #FF69B4;
+}
+.topbar{
+	line-height: 35px;
+	border-bottom:1px #eee solid;
+}
+.topbar ul li{
+	float: left;
+	padding-left: 20px;
+}
+.pc-header .badge{
+	background: #FF69B4;
+	position: relative;
+	top: 0px;
+	right: 2px;
+}
+.m-header .badge{
+	background: #FF69B4;
+	position: relative;
+	top: 2px;
+	right: 5px;
+}
+.person .personal a:not(:last-of-type):after{
+	content: "|";
+	padding: 0 5px;
+}
+.midheader{
+	padding-top: 10px;
+	line-height: 80px;
+}
+.midheader .pc-logo,.person .personal{
+	float: left;
+}
+.midheader .input-group{
+	float: left;
+	padding-left:50px;
+}
+.midheader .input-group .form-control{
+	float: none;
+	font-size: 16px;
+}
+.catebar{
+	background: #FF69B4;
+	float: left;
+	position: relative;
+	padding:0px 20px;
+	font-weight: bold;
+}
+.catebar>a{
+	color: #efefef;
+	text-decoration: none;
+}
+.catebar>a:hover,.catebar>a:focus{
+	color: #efefef !important;
+}
+.catebar ul.catalist{
+	line-height: 40px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top:50px;
+	background: #FFFFFF;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.catebar ul.catalist li,.pc-menu ul.dropdown-menu li{
+	position: relative;
+	height: 40px;
+}
+.catebar ul.catalist li a{
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 30px;
+	padding-left: 15px;
+	transition: all .3s;
+}
+.catebar ul.catalist li a:hover,.pc-menu ul.dropdown-menu li a:hover{
+	background: #EEEEEE;
+	text-indent: 5px;
+}
+.angleup{
+	animation: slideOutUp 1s infinite alternate;
+}
+.angledown{
+	animation: slideOutDown 1s infinite alternate;
+}
+.pc-menu{
+	line-height: 50px;
+}
+.pc-menu>a{
+	color:#333;
+	padding: 0 20px;
+}
+.pc-menu a:focus,.pc-menu a:hover,.pc-menu ul.dropdown-menu>li>a:hover,.pc-menu ul.dropdown-menu>li>a:focus{
+	color: #FF69B4;
+}
+.pc-menu ul.navbar-nav>li>a:hover,.pc-menu ul.navbar-nav>li>a:focus{
+	background: #fff;
+}
+.pc-menu ul.navbar-nav>li>a{
+	display: inline-block;
+	padding:0px 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.pc-menu ul.dropdown-menu{
+	border-top: 1px #FF69B4 solid;
+	display: none;
+	margin-top: 0;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.pc-menu ul.dropdown-menu li a{
+	position: relative;
+	color:#333;
+	margin-left: 0px;
+	line-height: 40px;
+	padding: 0 50px 0 20px;
+	transition: all .3s;
+}
+.catebar ul.catalist li a span,.pc-menu ul.dropdown-menu li a span{
+	position: absolute;
+	right: 18px;
+	top: 0;
+}
+.pc-menu ul.dropdown-menu li ul.dropdown-menu,.catebar ul.catalist li ul.dropdown-menu{
+	position: absolute;
+	left: 100%;
+	top:0;
+	margin-left: -1px;
+}

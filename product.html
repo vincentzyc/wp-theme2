@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>product</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<div id="product">
+			<div class="titrow">
+				<div class="container text-center">
+					<h1>PRODUCT</h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Shop</a>
+						</li>
+						<li class="active">Product</li>
+					</ol>
+				</div>
+			</div>
+			<div class="container diycontent">
+				<div class="col-sm-3 col-xs-0">
+					<div class="sidebar">
+						<h4>Products Categories</h4>
+						<ul>
+							<li>
+								<a href="#">ADAPTERS</a>
+							</li>
+							<li>
+								<a href="#">CLAMPS</a>
+								<ul>
+									<li>
+										<a href="#">FABRICATION</a>
+									</li>
+									<li>
+										<a href="#">CAPS</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">CUSTOM</a>
+							</li>
+							<li>
+								<a href="#">FERRULES</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-9 col-xs-12">
+					<div class="product-grid">
+						<div class="col-lg-3 col-sm-4 col-xs-6 clearPadding">
+							<!--产品展示列表-->
+							<div class="product-item">
+								<a href="singleProduct.html">
+									<div class="product-img">
+										<img src="img/product3.jpg">
+										<div class="addtocart">ADD TO CART</div>
+									</div>
+									<h5>Apple’s 9.7-inch iPad Pro White 128G</h5>
+								</a>
+								<p class="price">
+									<small><del>US$<i>102.86</i></del></small>
+									<span>US$<i>88.99</i></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<ul class="pagination">
+							<li>
+								<a href="#">&laquo;</a>
+							</li>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#">&raquo;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+
+		//页面演示数据加载js
+				var data = {
+					productgrid: [{
+						img: "product1.jpg",
+						name: "Smart Bluetooth Bracelet for iPhone Samsung Android",
+						oldprice: "12.86",
+						newprice: "9.99"
+					}, {
+						img: "product2.jpg",
+						name: "Apple’s 9.7-inch iPad Pro White 128G",
+						oldprice: "169.95",
+						newprice: "139.81"
+					}, {
+						img: "product3.jpg",
+						name: "Smart Bluetooth Bracelet for iPhone Samsung Android",
+						oldprice: "12.86",
+						newprice: "9.99"
+					}, {
+						img: "banner1.jpg",
+						name: "Apple’s 9.7-inch iPad Pro White 128G",
+						oldprice: "169.95",
+						newprice: "139.81"
+					}, {
+						img: "banner2.jpg",
+						name: "Smart Bluetooth Bracelet for iPhone Samsung Android",
+						oldprice: "12.86",
+						newprice: "9.99"
+					}, {
+						img: "banner3.jpg",
+						name: "Apple’s 9.7-inch iPad Pro White 128G",
+						oldprice: "169.95",
+						newprice: "139.81"
+					}, {
+						img: "product1.jpg",
+						name: "Apple’s 9.7-inch iPad Pro White 128G",
+						oldprice: "169.95",
+						newprice: "139.81"
+					}],
+				};
+
+				data.productgrid.forEach(function(value, index) {
+					var productdata = '';
+					productdata += '<div class="col-lg-3 col-sm-4 col-xs-6 clearPadding">';
+					productdata += '	<div class="product-item">';
+					productdata += '		<a href="#">';
+					productdata += '			<div class="product-img">';
+					productdata += '				<img src="img/' + value.img + '" />';
+					productdata += '				<div class="addtocart">ADD TO CART</div>';
+					productdata += '			</div>';
+					productdata += '			<h5>' + value.name + '</h5>';
+					productdata += '		</a>';
+					productdata += '		<p class="price">';
+					productdata += '			<small><del>US$<i>' + value.oldprice + '</i></del></small>';
+					productdata += '			<span>US$<i>' + value.newprice + '</i></span>';
+					productdata += '		</p>';
+					productdata += '	</div>';
+					productdata += '</div>';
+					$(".product-grid").append(productdata);
+				});
+		//页面演示数据加载js  end
+
+
+				//设置图片宽高相等
+				hwEqual('.product-grid .product-item img');
+
+				allAnimation.Animation('.product-item', 'fadeUp');
+
+				//显示加入购物车
+				$('.product-item .product-img').hover(function(event) {
+					event.stopPropagation();
+					$(this).children('.addtocart').slideDown('fast');
+				}, function() {
+					$(this).children('.addtocart').slideUp('fast');
+				});
+				//sidebar加右箭头
+				$('.sidebar ul li').each(function() {
+					$('ul', this).length >= 1 ? $(this).append("<a class='fa fa-angle-down haveli'></a>") : '';
+				});
+				$('.sidebar ul li').on('click','.haveli',function(){
+					$(this).siblings('ul').slideToggle('fast');
+					if($(this).hasClass('fa-angle-down')){
+						$(this).removeClass("fa-angle-down").addClass("fa-angle-up");
+					}else{
+						$(this).removeClass("fa-angle-up").addClass("fa-angle-down");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cart</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<div id="cart">
+			<div class="titrow">
+				<div class="container text-center">
+					<h1>CART</h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li class="active">Cart</li>
+					</ol>
+				</div>
+			</div>
+			<div class="container diycontent">
+				<form class="cart-form" method="post">
+					<table class="shop_table" cellspacing="0">
+						<thead>
+							<tr>
+								<th class="product-thumbnail">&nbsp;</th>
+								<th class="product-name">Product</th>
+								<th class="product-price">Price</th>
+								<th class="product-quantity">Quantity</th>
+								<th class="product-subtotal">Total</th>
+								<th class="product-remove">&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="cart_item">
+								<td class="product-thumbnail">
+									<a href="#"><img src="img/product2.jpg" class="shop_thumbnail" alt=""></a>
+								</td>
+								<td class="product-name">
+									<a href="#">Aliquam Consequat</a>
+								</td>
+								<td class="product-price">
+									$130.00
+								</td>
+								<td class="product-quantity">
+									<div class="quantity">
+										<button type="button" value="-" class="minus btn-bg" onclick="minus(this)">
+											<span class="fa fa-minus"></span>
+										</button>
+										<input type="text" min="0" class="input-text item-nub" value="3">
+										<button type="button" value="+" class="plus btn-bg" onclick="plus(this)">
+											<span class="fa fa-plus"></span>
+										</button>
+									</div>
+								</td>
+								<td class="product-price">
+									$390.00
+								</td>
+								<td class="product-remove">
+									<a href="#"><span class="fa fa-close"></span></a>
+								</td>
+							</tr>
+							<tr class="cart_item">
+								<td class="product-thumbnail">
+									<a href="#"><img src="img/product3.jpg" class="shop_thumbnail" alt=""></a>
+								</td>
+								<td class="product-name">
+									<a href="#">Donec Non Est</a>
+								</td>
+								<td class="product-price">
+									$155.00
+								</td>
+								<td class="product-quantity">
+									<div class="quantity">
+										<button type="button" value="-" class="minus btn-bg" onclick="minus(this)">
+											<span class="fa fa-minus"></span>
+										</button>
+										<input type="text" min="0" class="input-text item-nub" value="3">
+										<button type="button" value="+" class="plus btn-bg" onclick="plus(this)">
+											<span class="fa fa-plus"></span>
+										</button>
+									</div>
+								</td>
+								<td class="product-price">
+									$155.00
+								</td>
+								<td class="product-remove">
+									<a href="#"><span class="fa fa-close"></span></a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6">
+									<a href="#" class="btn btn-bg shopbtn">Continue Shopping</a>
+									<input type="submit" class="btn btn-bg updatebtn" value="Update Cart" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="actions row">
+						<div class="col-xs-12 col-sm-8">
+							<div class="coupon">
+								<h3>Coupon</h3>
+								<p>Enter your coupon code if you have one.</p>
+								<input type="text" class="form-control input-text" placeholder="Coupon code">
+								<a href="#" class="btn btn-bg">Apply Coupon</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="cart-total-wrapper">
+								<div class="total-cost">
+									<div class="cart_totals calculated_shipping">
+										<h3>Cart totals</h3>
+										<table cellspacing="0" class="shop_table">
+											<tr>
+												<th>Subtotal</th>
+												<td>$545.00</td>
+											</tr>
+											<tr>
+												<th>Shipping</th>
+												<td>Free Shipping </td>
+											</tr>
+											<tr>
+												<th>Total</th>
+												<td><strong>$545.00</strong></td>
+											</tr>
+										</table>
+										<div class="tocheckout">
+											<a href="#" class="btn btn-bg">
+												Proceed to checkout
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+
+				//验证输入框数字是否合法
+				$('.item-nub').blur(function(){
+					var nub = parseInt($(this).val());
+					nub<1?$(this).val(1):$(this).val(nub);
+				});
+			});
+		</script>
+	</body>
+</html>
